@@ -162,6 +162,8 @@ const Contact = () => {
                   <a
                     key={social.label}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={social.label}
                     className={`w-11 h-11 bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl flex items-center justify-center text-[#a0a0a0] hover:bg-[#ff6b35]/10 hover:border-[#ff6b35]/30 hover:text-[#ff6b35] hover:scale-110 transition-all duration-300 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-75'
                       }`}

@@ -19,28 +19,28 @@ const projects: Project[] = [
     title: 'Coming Soon',
     status: 'coming-soon',
     tags: ['TBA'],
-    image: '/project-placeholder.jpg',
+    image: '/coming-soon.gif',
   },
   {
     id: 2,
     title: 'Coming Soon',
     status: 'coming-soon',
     tags: ['TBA'],
-    image: '/project-placeholder.jpg',
+    image: '/coming-soon.gif',
   },
   {
     id: 3,
     title: 'Coming Soon',
     status: 'coming-soon',
     tags: ['TBA'],
-    image: '/project-placeholder.jpg',
+    image: '/coming-soon.gif',
   },
   {
     id: 4,
     title: 'Coming Soon',
     status: 'coming-soon',
     tags: ['TBA'],
-    image: '/project-placeholder.jpg',
+    image: '/coming-soon.gif',
   },
 ];
 
@@ -169,7 +169,7 @@ const Projects = () => {
                     <img
                       src={project.image || '/project-placeholder.jpg'}
                       alt={project.title}
-                      className="w-full h-full object-cover opacity-40 grayscale"
+                      className="w-full h-full object-cover opacity-40"
                     />
                   </div>
                   <div className="absolute inset-0 flex flex-col justify-end p-5">
@@ -216,6 +216,8 @@ const Projects = () => {
                     {project.demo && (
                       <a
                         href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-1.5 px-3 py-1.5 text-xs bg-[#1a1a1a] text-white rounded-full border border-[#2a2a2a] hover:bg-[#ff6b35] hover:border-[#ff6b35] hover:scale-105 active:scale-95 transition-all duration-300"
                       >
                         <ExternalLink size={12} />
@@ -225,6 +227,8 @@ const Projects = () => {
                     {project.github && (
                       <a
                         href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-1.5 px-3 py-1.5 text-xs bg-[#1a1a1a] text-white rounded-full border border-[#2a2a2a] hover:bg-[#333] hover:border-white/30 hover:scale-105 active:scale-95 transition-all duration-300"
                       >
                         <Github size={12} />

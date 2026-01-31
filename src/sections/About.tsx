@@ -18,15 +18,16 @@ const stats: Stat[] = [
 const skills = [
   'Python',
   'C++',
-  'Backend Development',
-  'Machine Learning',
   'Data Structures & Algorithms',
-  'Data Analysis',
+  'Problem Solving',
+  'OOP Concepts',
   'Pandas & NumPy',
-  'Scikit-learn',
-  'REST APIs',
+  'Data Cleaning & EDA',
+  'Feature Engineering',
+  'Matplotlib & Seaborn',
   'SQL',
   'Git & GitHub',
+  'Jupyter Notebook',
 ];
 
 const About = () => {
